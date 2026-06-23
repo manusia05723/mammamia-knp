@@ -128,12 +128,12 @@ with st.form("triage_form"):
         cough            = st.checkbox("🤧  cough")
     with c2:
         headache         = st.checkbox("🤕  headache")
-        chest_pain       = st.checkbox("💔  chest_pain")
+        chest_pain       = st.checkbox("💔  chest pain")
     with c3:
-        stomach_pain     = st.checkbox("🤢  stomach_pain")
-        shortness_breath = st.checkbox("😮‍💨  shortness_breath")
+        stomach_pain     = st.checkbox("🤢  stomach pain")
+        shortness_breath = st.checkbox("😮‍💨  shortness breath")
     with c4:
-        nausea_vomiting  = st.checkbox("🤮  nausea_vomiting")
+        nausea_vomiting  = st.checkbox("🤮  nausea/vomiting")
         dizziness        = st.checkbox("😵  dizziness")
 
     c5, _, _, _ = st.columns(4)
@@ -150,7 +150,7 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#25f20a;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">2</span>
-            <span style="font-size:16px;font-weight:600;color:#105efa;">CODENO14</span>
+            <span style="font-size:16px;font-weight:600;color:#105efa;">How long have you had these symptoms?</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -171,16 +171,16 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#25f20a;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">3</span>
-            <span style="font-size:16px;font-weight:600;color:#105efa;">CODENO17</span>
+            <span style="font-size:16px;font-weight:600;color:#105efa;">How would you rate the severity?</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
     col_temp, col_hr = st.columns(2)
     with col_temp:
-        temperature_level = st.selectbox("CODENO18", options=list(temp_map.keys()), index=1)
+        temperature_level = st.selectbox("temperature", options=list(temp_map.keys()), index=1)
     with col_hr:
-        heart_rate_level  = st.selectbox("CODENO19", options=list(hr_map.keys()), index=1)
+        heart_rate_level  = st.selectbox("heart rate", options=list(hr_map.keys()), index=1)
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -192,15 +192,15 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#25f20a;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">4</span>
-            <span style="font-size:16px;font-weight:600;color:#105efa;">CODENO20</span>
+            <span style="font-size:16px;font-weight:600;color:#105efa;">Do you have any of the following?</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
     ch1, ch2, ch3, _ = st.columns(4)
-    with ch1: hypertension  = st.checkbox("🩺 CODENO21")
-    with ch2: heart_disease = st.checkbox("❤️ CODENO22")
-    with ch3: asthma        = st.checkbox("💨 CODENO23")
+    with ch1: hypertension  = st.checkbox("🩺 high blood pressure")
+    with ch2: heart_disease = st.checkbox("❤️ heart disease")
+    with ch3: asthma        = st.checkbox("💨 asthma")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -212,16 +212,16 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#25f20a;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">5</span>
-            <span style="font-size:16px;font-weight:600;color:#105efa;">CODENO24</span>
+            <span style="font-size:16px;font-weight:600;color:#105efa;">Patient Information</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
     col_age, col_gen = st.columns(2)
     with col_age:
-        age    = st.number_input("CODENO25", min_value=1, max_value=120, value=35)
+        age    = st.number_input("age", min_value=1, max_value=120, value=35)
     with col_gen:
-        gender = st.selectbox("CODENO26", options=['Female', 'Male'])
+        gender = st.selectbox("gender", options=['Female', 'Male'])
 
     submitted = st.form_submit_button("CODENO27 →")
 
