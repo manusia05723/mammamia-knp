@@ -1,10 +1,10 @@
-import streamlit as st
+aaaaaaaaaaimport streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
 import os
 
-st.set_page_config(page_title="CODENO1", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="Smart Hospital Patient Navigator", page_icon="🏥", layout="wide")
 
 st.markdown("""
 <style>
@@ -88,7 +88,7 @@ DEPT_INFO = {
 # ── Hero Header ───────────────────────────────────────────────────────────────
 st.markdown("""
 <!-- COLOR1 -->
-<div style="background:linear-gradient(135deg,#f60606 0%,#4fff0a 60%,#c10cdd 100%);
+<div style="background:linear-gradient(135deg,#f60606 0%,#ffca0a 60%,#ddd30c 100%);
             padding:3rem 2rem 2.5rem;margin:-1rem -1rem 2rem;text-align:center;">
     <div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.7);
                 text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;">
@@ -96,10 +96,10 @@ st.markdown("""
     </div>
     <div style="font-size:36px;font-weight:700;color:#ffffff;margin-bottom:12px;
                 letter-spacing:-0.02em;">
-        CODENO2
+        Smart Hospital Patient Navigator
     </div>
     <div style="font-size:18px;color:rgba(255,255,255,0.85);font-weight:400;">
-        CODENO3
+        Find the Right Department for Your Symptoms
     </div>
 </div>
 """, unsafe_allow_html=True)
