@@ -144,10 +144,10 @@ with st.form("triage_form"):
     # Section 2 — Duration & Complaint
     st.markdown("""
     <!-- COLOR3 -->
-    <div style="background:#ffd478;border:1px solid #fffb00;border-radius:14px;
+    <div style="background:#f9f57d;border:1px solid #fffb00;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#ff9100;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">2</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">How long have you had these symptoms?</span>
         </div>
@@ -165,10 +165,10 @@ with st.form("triage_form"):
     # Section 3 — Severity
     st.markdown("""
     <!-- COLOR4 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#ff9696;border:1px solid #ff0000;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#ff9900;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">3</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">How would you rate the severity?</span>
         </div>
@@ -186,10 +186,10 @@ with st.form("triage_form"):
     # Section 4 — Medical History
     st.markdown("""
     <!-- COLOR5 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#8fffcd;border:1px solid #00ffcc;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#00ff84;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">4</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">Do you have any of the following?</span>
         </div>
@@ -206,10 +206,10 @@ with st.form("triage_form"):
     # Section 5 — Patient Info
     st.markdown("""
     <!-- COLOR6 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#b4f7ff;border:1px solid #00ff99;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#0051ff;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">5</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">Patient Information</span>
         </div>
