@@ -115,7 +115,8 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#25f20a;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">1</span>
-            <span style="font-size:16px;font-weight:600;color:#105efa;">CODENO4</span>
+            <span style="font-size:16px;font-weight:600;color:#105efa;">What are your main symptoms?
+</span>
             <span style="font-size:13px;color:#6b7280;font-style:italic;">select all that apply</span>
         </div>
     </div>
@@ -123,21 +124,21 @@ with st.form("triage_form"):
 
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        fever            = st.checkbox("🌡️  CODENO5")
-        cough            = st.checkbox("🤧  CODENO6")
+        fever            = st.checkbox("🌡️  fever")
+        cough            = st.checkbox("🤧  cough")
     with c2:
-        headache         = st.checkbox("🤕  CODENO7")
-        chest_pain       = st.checkbox("💔  CODENO8")
+        headache         = st.checkbox("🤕  headache")
+        chest_pain       = st.checkbox("💔  chest_pain")
     with c3:
-        stomach_pain     = st.checkbox("🤢  CODENO9")
-        shortness_breath = st.checkbox("😮‍💨  CODENO10")
+        stomach_pain     = st.checkbox("🤢  stomach_pain")
+        shortness_breath = st.checkbox("😮‍💨  shortness_breath")
     with c4:
-        nausea_vomiting  = st.checkbox("🤮  CODENO11")
-        dizziness        = st.checkbox("😵  CODENO12")
+        nausea_vomiting  = st.checkbox("🤮  nausea_vomiting")
+        dizziness        = st.checkbox("😵  dizziness")
 
     c5, _, _, _ = st.columns(4)
     with c5:
-        skin_rash = st.checkbox("🔴  CODENO13")
+        skin_rash = st.checkbox("🔴  skin_rash")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -156,9 +157,9 @@ with st.form("triage_form"):
 
     col_cc, col_dur = st.columns(2)
     with col_cc:
-        chief_complaint = st.selectbox("CODENO15", options=list(cc_map.keys()))
+        chief_complaint = st.selectbox("chief_complaint", options=list(cc_map.keys()))
     with col_dur:
-        duration = st.selectbox("CODENO16", options=list(dur_map.keys()), index=1)
+        duration = st.selectbox("duration", options=list(dur_map.keys()), index=1)
 
     st.markdown("<br>", unsafe_allow_html=True)
 
